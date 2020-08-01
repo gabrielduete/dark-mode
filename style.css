@@ -39,7 +39,7 @@ p{
     margin-top: 20px;
     cursor: pointer;
 }
-
+/* Parte animação da imagem da lua */
 #lua:hover{
     animation: bounce .4s;
 }
@@ -51,7 +51,6 @@ p{
     25%, 55%, 85%{
         transform: translateY(10px);
     }
-
 }
 
 #clique{
@@ -74,7 +73,6 @@ p{
     #Lua{
         margin-top: 40px;
     }
-    
 }
 
 /* Mobile */
