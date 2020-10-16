@@ -2,7 +2,7 @@
     Dark Mode
 </h1>
 
-## Previa
+## ⏩ Previa
 
 <img src='darkmode.png'>
 
