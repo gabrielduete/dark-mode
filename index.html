@@ -35,8 +35,11 @@
 
     <h2> Como implementar na sua aplicação </h2>
 
-    <p id='css3'>CSS</p>
-    <textarea disabled rows="12">
+    <p>Implementando em CSS:</p>
+    <p>Basta copiar e colar no seu código CSS!</p>
+
+
+    <textarea disabled rows="12" id = '1'>
 body{
     background: #fff;
     color: #333;
@@ -49,8 +52,10 @@ body{
         }
 }
     </textarea>
-    <p id='javascript3'>JavaScript</p>
-    <textarea disabled rows="15">
+    <p>Implementando em JavaScript:</p>
+    <p>Basta copiar e colar no seu código, depois coloque <br> a função mudarCor() em seu elemento html que deseja.</p>
+
+    <textarea disabled rows="15" id = '2'>
 var mudar = false
 function mudarCor(){
     if (mudar == false){
@@ -66,16 +71,19 @@ function mudarCor(){
     </textarea>
 
     <p id='clique'>
-        Clique na lua abaixo para trocar de tema! :)
+        Clique no ícone abaixo para trocar de tema! :)
     </p>
-
-    <img src="lua.png" alt="Dark" id='lua' onclick='mudarCor()'>
-
+    <i class="far fa-moon" alt="Dark" id='lua' class= 'efeito' onclick='mudarCor()'></i>
+    <i class="far fa-sun" alt = 'Dark' id='sol' class= "efeito" onclick='mudarCor()'></i>
     <footer>
         Desenvolvido por Gabriel Duete
+       <a href='https://github.com/gabrielduete/dark-mode' target = 'blank'><i class="fab fa-github"></i></a>
+       <a href='https://www.instagram.com/gabriel.duete/?hl=pt-br' target = '_blank'><i class="fab fa-instagram"></i></a>
+       <a href='https://www.linkedin.com/in/gabrielduete' target = '_blank'><i class="fab fa-linkedin"></i></a>
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/7240b5471e.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
