@@ -3,7 +3,7 @@ body{
     padding: 0px;
     height: 100%;
     background-color: rgb(255, 255, 255);
-    color: #333;
+    color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 25px;
@@ -41,17 +41,8 @@ textarea{
     padding: 10px;
     display: inline-block;
     border-radius: 5px;
-    background-color: black;
-    color: white;
-}
-
-
-#css3{
-    margin-left: 630px;
-}
-
-#javascript3{
-    margin-left: 620px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 #lua{
@@ -60,22 +51,35 @@ textarea{
     margin-top: 20px;
     cursor: pointer;
 }
-/* Parte animação da imagem da lua */
-#lua:hover{
-    animation: bounce .4s;
+
+#sol{
+    cursor: pointer;
+    display: none;
 }
 
-@keyframes bounce{
-    10%, 40%, 70%{
-        transform: translateY(-10px);
-    }
-    25%, 55%, 85%{
-        transform: translateY(10px);
-    }
+a{
+    text-decoration: none;
+    color: black;
 }
 
-#clique{
-    text-indent: 12ch;
+/*PlayBook*/
+@media (max-width: 380px ){
+    h1{
+        font-size: 26px;
+    }
+    p{
+        margin: 0;
+        font-size: 17px;
+    }
+    #clique{
+        text-indent: 1ch;
+        margin-top: 40px;
+    }
+    #Lua{
+        margin-top: 40px;
+    }
+
+
 }
 
 /* Moto G4, GalaxyS5*/
@@ -114,8 +118,9 @@ textarea{
     footer{
         margin-top:50px;
     }
-    
+
 }
+    
 
 /* Pixel 2XL */
 @media (width: 411px) and (max-height: 823px){
@@ -133,6 +138,7 @@ textarea{
     footer{
         margin-top:100px;
     }
+
 }
 
 /* Iphone 5/SE, Iphone 6/7/8 */
@@ -152,6 +158,7 @@ textarea{
         margin-top:10px;
         font-size: 20px;
     }
+
 }
 
 /* Iphone 6/7/8 Plus */
@@ -171,6 +178,7 @@ textarea{
         margin-top:100px;
         font-size: 20px;
     }
+
 }
 
 /* Iphone X */
@@ -192,6 +200,7 @@ textarea{
         margin-top:70px;
         font-size: 20px;
     }
+
 }
 
 /* iPad */
@@ -213,6 +222,8 @@ textarea{
         margin-top:70px;
         font-size: 30px;
     }
+
+
 }
 
 /* iPad Pro */
@@ -234,6 +245,7 @@ textarea{
         margin-top:70px;
         font-size: 40px;
     }
+
 }
 
 /* Surface Duo */
@@ -255,6 +267,7 @@ textarea{
         margin-top:10px;
         font-size: 20px;
     }
+
 }
 
 
@@ -278,6 +291,7 @@ textarea{
         margin-top:50px;
         font-size: 20px;
     }
+
 }
 
 /* MONITORES GRANDES */
@@ -348,6 +362,28 @@ textarea{
 }
 
 @media (min-width: 1040px) and (max-width: 2652px) and (min-height: 880px) and (max-height: 1140px){
+    h1{
+        font-size: 120px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    p{
+        text-align: center;
+        margin: 0;
+        margin-left: 0px;
+        font-size: 40px;
+    }
+    #clique{
+        text-indent: 1ch;
+        margin-top: 40px;
+    }
+    footer{
+        margin-top:100px;
+        font-size: 25px;
+    }
+}
+
+@media (width: 1326) and (min-height:200px){
     h1{
         font-size: 120px;
         margin-top: 5px;
