@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,27 +12,64 @@
 <body>
     <header>
         <hgroup>
-            <h1>Demonstração do Dark Mode</h1>
+            <h1>Dark Mode</h1>
         </hgroup>
-    </header>  
+    </header>
 
-        <p>
-            Olá! Essa é uma simples demonstração de como funciona o dark mode. <br> Clicando 
-            na imagem da lua, você pode alterar entre o tema claro e escuro!
-        </p><br>
-        <p>
-            Essa função busca reduzir o impacto da iluminação da interface gráfica de aparelhos<br> e altera,
-            de forma temporária, as cores na tela. 
-            Os softwares passam a ser executados<br> em tons escuros, 
-            a fim de oferecer um uso mais confortável ao usuário, principalmente,<br> em ambientes pouco iluminados. 
-            <br>Além disso, o dark mode também pode economizar a bateria do celular.
-        </p>
+    <p>
 
-        <p id = 'clique'>
-            Clique na lua abaixo para trocar de tema! :)
-         </p>
+        Olá! Essa é uma simples demonstração de como funciona o dark mode. <br> Clicando
+        na imagem da lua, você pode alterar entre o tema claro e escuro!
 
-    <img src="lua.png" alt="Dark" id='lua' onclick='mudarCor()'> 
+    </p><br>
+
+    <p>
+
+        Essa função busca reduzir o impacto da iluminação da interface gráfica de aparelhos<br> e altera,
+        de forma temporária, as cores na tela.
+        Os softwares passam a ser executados<br> em tons escuros,
+        a fim de oferecer um uso mais confortável ao usuário, principalmente,<br> em ambientes pouco iluminados.
+        <br>Além disso, o dark mode também pode economizar a bateria do celular.
+
+    </p>
+
+    <h2> Como implementar na sua aplicação </h2>
+
+    <p id='css3'>CSS</p>
+    <textarea disabled rows="12">
+body{
+    background: #fff;
+    color: #333;
+}
+
+@media (prefers-color-scheme: dark){
+    body{
+        background: #333;
+        color: #efefef
+        }
+}
+    </textarea>
+    <p id='javascript3'>JavaScript</p>
+    <textarea disabled rows="15">
+var mudar = false
+function mudarCor(){
+    if (mudar == false){
+        document.body.style.backgroundColor = '#333'
+        document.body.style.color = '#fff'
+        mudar = true
+    }else{
+        document.body.style.backgroundColor = 'rgb(228, 220, 220)'
+        document.body.style.color = '#333'
+        mudar = false
+}
+}
+    </textarea>
+
+    <p id='clique'>
+        Clique na lua abaixo para trocar de tema! :)
+    </p>
+
+    <img src="lua.png" alt="Dark" id='lua' onclick='mudarCor()'>
 
     <footer>
         Desenvolvido por Gabriel Duete
@@ -39,4 +77,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
